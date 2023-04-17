@@ -1,0 +1,8 @@
+server.port: 9001
+spring.application.name: demo-discovery-server
+
+eureka:
+  client:
+    registerWithEureka: false
+    fetchRegistry: false
+    service-url.defaultZone: http://localhost:${server.port}/eureka
